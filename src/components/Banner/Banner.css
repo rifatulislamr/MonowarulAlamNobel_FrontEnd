@@ -1,0 +1,65 @@
+/* Banner.css */
+.BbaHubBanner {
+  width: 100%; /* Default width */
+  max-height: 80vh;
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .BbaHubBanner {
+      /* Adjust styling for small screens */
+  }
+}
+
+/* Medium screens (769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .BbaHubBanner {
+      /* Adjust styling for medium screens */
+  }
+}
+
+/* Large screens (993px and above) */
+@media (min-width: 993px) {
+  .BbaHubBanner {
+      /* Adjust styling for large screens */
+  }
+}
+
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.BbaHubBanner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.BbaHubBanner {
+  width: 100%; /* Make the images take up the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add a media query for mobile devices (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: auto; /* Allow the container to adjust its height */
+  }
+  .BbaHubBanner {
+    max-width: 100%; /* Ensure images don't overflow the container */
+    height: auto;
+  }
+}

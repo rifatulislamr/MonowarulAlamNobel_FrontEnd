@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+   "title": "আমার জীবনের সবচেয়ে সুন্দর মুহূর্ত গুলোর মধ্যে একটা হচ্ছে আমার নেতা আমার অভিভাবক ব্যারিস্টার শেখ ফজলে নাঈম ভাই",
+   "subtitle": "আমার জীবনের সবচেয়ে সুন্দর মুহূর্ত গুলোর মধ্যে একটা হচ্ছে আমার নেতা আমার অভিভাবক ব্যারিস্টার শেখ ফজলে নাঈম ভাইয়ের হাত ধরে যুব রাজনীতির মাঠে নতুন রূপে আবির্ভাব হওয়া।সেই সাথে আমি ধন্য আমার নেতা ব্যারিস্টার শেখ ফজলে নাঈম থাকার কারণে আমি বুঝতে পারি যে আমি তার ছায়ায় বসবাস করি।‌ তার কাছ থেকে অনেক কিছু শিখছি ।",
+   "image": "../../src/assets/Front page images/fi-2.jpg",
+   "category": "recentNews",
+   "classes":"flex-1 p-4 border-r border-gray-300"
+   },
+   { "_id": 2,
+   "title": "নীরবতা সবসময় সম্মতির লক্ষণ হয় না! অনেক সময় নীরবতা...",
+   "subtitle": "Example Subtitle",
+   "image": "../../src/assets/Front page images/fi-1.jpg",
+   "category": "recentNews"
+   },
+   { "_id": 3,
+   "title": "কখনও কখনও এমন জিনিস যা আমাকে সবচেয়ে বেশি আঘাত করে, আর যা ...।",
+   "subtitle": "Example Subtitle",
+   "image": "../../src/assets/Front page images/fi-3.jpg",
+   "category": "recentNews"
+   },
+   { "_id": 4,
+   "title": "কখনও কখনও এমন জিনিস যা আমাকে সবচেয়ে বেশি আঘাত করে, আর যা সবচেয়ে বড় শিক্ষা দেয় আমার এই জীবনের।",
+   "subtitle": "Example Subtitle",
+   "image": "../../src/assets/Front page images/fi-4.jpg",
+   "category": "recentNews"
+   },
+   
+    { "_id": 5,
+    "title": "শেখ রাসেলের জন্মদিন উপলক্ষে চট্টগ্রামে যুবলীগের মিলাদ মাহফিল অনুষ্ঠিত",
+    "subtitle": "Example Subtitle",
+    "image": "../../src/assets/Front page images/fi-5.jpg",
+    "category": "recentNews"
+    },
+    { "_id": 6,
+    "title": "নীরবতা সবসময় সম্মতির লক্ষণ হয় না! অনেক সময় নীরবতা...",
+    "subtitle": "Example Subtitle",
+    "image": "../../src/assets/Front page images/fi-6.jpg",
+    "category": "recentNews"
+    },
+    { "_id": 7,
+    "title": "নীরবতা সবসময় সম্মতির লক্ষণ হয় না! অনেক সময় নীরবতা...",
+    "subtitle": "Example Subtitle",
+    "image": "../../src/assets/Front page images/fi-7.jpg",
+    "category": "recentNews"
+    }
+    
+   
+    
+
+    
+]
