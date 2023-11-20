@@ -1,7 +1,6 @@
 
 import Banner from "../../components/Banner/Banner";
 import RecentNews from "../../components/RecentNews/RecentNews";
-// import RecentNewsItems from "../../components/RecentNews/RecentNewsItems";
 import PersonalNews from "../../components/PersonalNews/PersonalNews";
 import PoliticalNews from "../../components/PoliticalNews/PoliticalNews";
 
@@ -15,10 +14,10 @@ const Home = () => {
             
             <Banner></Banner>
          <RecentNews></RecentNews>
-         {/* <RecentNewsItems></RecentNewsItems> */}
-            {/* <PersonalNews></PersonalNews>
+        
+            <PersonalNews></PersonalNews>
             <SocialNews></SocialNews>
-            <PoliticalNews></PoliticalNews> */}
+            <PoliticalNews></PoliticalNews>
             
         
         </div>
