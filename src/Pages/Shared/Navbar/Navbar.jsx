@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -109,9 +110,9 @@ const Navbar = () => {
               {navOption}
             </ul>
           </div>
-          <a href="#" className="btn btn-ghost normal-case text-xl ">
+          <Link to="/" className="btn btn-ghost normal-case text-xl ">
             মনোয়ার উল আলম নোবেল
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 ">{navOption}</ul>

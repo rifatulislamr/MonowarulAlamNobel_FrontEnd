@@ -27,7 +27,6 @@ const RecentNews = () => {
           "http://localhost:3000/all-articles"
         );
         setRecentArticles(articlesResponse.data);
-        console.log(articlesResponse.data);
       } catch (error) {
         console.error("Error fetching data:", error.message);
       }

@@ -27,7 +27,7 @@ const RecentPostDetails = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 my-12  sm:my-20">
         <div className="md:col-span-3   w-4/5 mx-auto flex flex-col items-center justify-start">
           <img
-            className="w-4/5 md:w-3/5 aspect-video mx-auto  mb-12 object-cover object-center"
+            className="w-4/5  aspect-video mx-auto  mb-12 object-cover object-center"
             src={post.image}
             alt={post.title}
           />
@@ -38,40 +38,42 @@ const RecentPostDetails = () => {
             {post.subtitle}
           </p>
         </div>
+
+        {/* Tab-bar */}
         <div className="flex items-start justify-end">
           <div role="tablist" className="tabs tabs-bordered">
             <input
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab"
-              aria-label="Tab 1"
+              className="tab text-slate-600 text-lg font-semibold"
+              aria-label="সম্প্রতিক"
             />
-            <div role="tabpanel" className="tab-content ">
-              Tab content 1
+            <div role="tabpanel" className="tab-content my-6">
+              সম্প্রতিক
             </div>
 
             <input
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab"
-              aria-label="Tab 2"
+              className="tab text-slate-600 text-lg font-semibold "
+              aria-label="ব্যক্তিগত"
               checked
             />
-            <div role="tabpanel" className="tab-content ">
-              Tab content 2
+            <div role="tabpanel" className="tab-content my-6">
+              ব্যক্তিগত
             </div>
             <input
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab"
-              aria-label="Tab 3"
+              className="tab text-slate-600 text-lg font-semibold"
+              aria-label="সামাজিক"
               checked
             />
-            <div role="tabpanel" className="tab-content ">
-              Tab content 3
+            <div role="tabpanel" className="tab-content my-6">
+              সামাজিক
             </div>
           </div>
         </div>
