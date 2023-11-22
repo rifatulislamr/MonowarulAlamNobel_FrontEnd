@@ -1,22 +1,27 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const PersonalNews = () => {
+const SocialNews = () => {
   const [socialNewsData, setSocialNewsData] = useState([]);
   const [articlesData, setArticlesData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const news = await fetch("public/recentNews.json");
-        const articles = await fetch("public/allArticles.json");
+        // Fetch recent news from the server
+        const newsResponse = await axios.get(
+          "http://localhost:3000/social-news"
+        );
+        setSocialNewsData(newsResponse.data);
 
-        const newsData = await news.json();
-        const articlesData = await articles.json();
-
-        setSocialNewsData(newsData);
-        setArticlesData(articlesData);
+        // Fetch all articles from the server
+        const articlesResponse = await axios.get(
+          "http://localhost:3000/all-articles"
+        );
+        setArticlesData(articlesResponse.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error.message);
       }
     };
 
@@ -51,47 +56,55 @@ const PersonalNews = () => {
         {/* content */}
         <div className="lg:col-span-3 lg:grid lg:grid-cols-3 gap-6">
           {/* first item */}
-          <div className=" md:flex md:justify-between md:gap-6 lg:col-span-full">
-            <img
-              src={socialNewsData[0]?.image}
-              alt=""
-              className="mb-6 md:w-1/2 object-cover object-top"
-            />
-            <div className="md:w-1/2">
-              <h3 className="text-2xl sm:text-3xl mb-4">
-                {socialNewsData[0]?.title}
-              </h3>
-              <p className="text-base leading-normal text-slate-600">
-                {" "}
-                {socialNewsData[0]?.subtitle}
-              </p>
-            </div>
+          <div className="lg:col-span-full">
+            <Link to={`/social-news/${socialNewsData[0]?._id}`}>
+              <div className=" md:flex md:justify-between md:gap-6 ">
+                <img
+                  src={socialNewsData[0]?.image}
+                  alt=""
+                  className="mb-6 md:w-1/2 object-cover object-top"
+                />
+                <div className="md:w-1/2">
+                  <h3 className="text-2xl sm:text-3xl mb-4">
+                    {socialNewsData[0]?.title}
+                  </h3>
+                  <p className="text-base leading-normal text-slate-600">
+                    {" "}
+                    {socialNewsData[0]?.subtitle}
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
 
           {/* second item */}
           <div className="col-span-1">
-            <img
-              src={socialNewsData[1]?.image}
-              className="mb-6 aspect-square"
-              alt=""
-            />
-            <h3 className="text-lg mb-4">{socialNewsData[1]?.title}</h3>
-            <p className="text-base leading-normal text-slate-600">
-              {socialNewsData[1]?.subtitle}
-            </p>
+            <Link to={`/social-news/${socialNewsData[1]?._id}`}>
+              <img
+                src={socialNewsData[1]?.image}
+                className="mb-6 aspect-square"
+                alt=""
+              />
+              <h3 className="text-lg mb-4">{socialNewsData[1]?.title}</h3>
+              <p className="text-base leading-normal text-slate-600">
+                {socialNewsData[1]?.subtitle}
+              </p>
+            </Link>
           </div>
 
           {/* third item */}
           <div className="col-span-2">
-            <img
-              src={socialNewsData[2]?.image}
-              className="mb-6 aspect-video"
-              alt=""
-            />
-            <h3 className="text-lg mb-4">{socialNewsData[2]?.title}</h3>
-            <p className="text-base leading-normal text-slate-600">
-              {socialNewsData[2]?.subtitle}
-            </p>
+            <Link to={`/social-news/${socialNewsData[2]?._id}`}>
+              <img
+                src={socialNewsData[2]?.image}
+                className="mb-6 aspect-video  object-cover object-center"
+                alt=""
+              />
+              <h3 className="text-lg mb-4">{socialNewsData[2]?.title}</h3>
+              <p className="text-base leading-normal text-slate-600">
+                {socialNewsData[2]?.subtitle}
+              </p>
+            </Link>
           </div>
         </div>
       </div>
@@ -99,4 +112,4 @@ const PersonalNews = () => {
   );
 };
 
-export default PersonalNews;
+export default SocialNews;

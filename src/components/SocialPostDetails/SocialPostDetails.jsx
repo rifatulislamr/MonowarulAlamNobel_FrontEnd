@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const PoliticalPostDetails = () => {
+const SocialPostDetails = () => {
   const [post, setPost] = useState({});
   const { id } = useParams();
 
@@ -11,7 +11,7 @@ const PoliticalPostDetails = () => {
     const fetchPostDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/political-news/${id}`
+          `http://localhost:3000/social-news/${id}`
         );
         setPost(response.data);
       } catch (error) {
@@ -84,4 +84,4 @@ const PoliticalPostDetails = () => {
   );
 };
 
-export default PoliticalPostDetails;
+export default SocialPostDetails;
