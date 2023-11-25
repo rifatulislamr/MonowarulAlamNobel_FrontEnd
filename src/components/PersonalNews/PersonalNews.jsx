@@ -1,6 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const PersonalNews = () => {
   const [personalNewsData, setPersonalNewsData] = useState([]);
@@ -30,8 +34,8 @@ const PersonalNews = () => {
 
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
+    data-aos="fade-up"
+    data-aos-duration="2000"
       className="container mx-auto py-8 md:py-16"
     >
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">

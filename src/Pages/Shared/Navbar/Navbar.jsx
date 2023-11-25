@@ -12,7 +12,7 @@ const Navbar = () => {
   const navOption = (
     <>
       <li className="main-nav-item group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
-        <a className="main-nav-link">হোম</a>
+      <Link to="/" className="main-nav-link">হোম</Link>
       </li>
       <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
         <a>ব্যক্তিগত কর্মকান্ড</a>

@@ -1,7 +1,12 @@
 import axios from "axios";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+// ..
+AOS.init();
 
 const PoliticalPostDetails = () => {
   const [post, setPost] = useState({});
@@ -26,8 +31,11 @@ const PoliticalPostDetails = () => {
     <>
       <div className="px-8 md:px-16 py-10 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 ">
-          <div className="md:col-span-3   w-4/5 mx-auto flex flex-col items-center justify-start">
-            <img
+          <div data-aos="fade-up"
+     data-aos-duration="2000" className="md:col-span-3   w-4/5 mx-auto flex flex-col items-center justify-start">
+            <img 
+         data-aos="zoom-out"
+            data-aos-duration="2000"
               className="w-4/5 md:w-4/5 aspect-video mx-auto  mb-12 object-cover object-center"
               src={post.image}
               alt={post.title}
