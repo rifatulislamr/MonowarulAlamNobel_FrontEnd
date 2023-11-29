@@ -57,7 +57,6 @@ const MyVideos = () => {
     setCurrentTime(player.getCurrentTime());
   };
 
-  // Function to extract video ID from YouTube video link
   const extractVideoId = (link) => {
     const match = link.match(
       /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/
@@ -78,9 +77,9 @@ const MyVideos = () => {
               onStateChange={onStateChange}
               onProgress={onProgress}
             />
-            <div className="mt-2 text-slate-600 text-lg font-medium">
+            <h3 className="mt-2 text-slate-600 text-xl font-medium">
               {item.name}
-            </div>
+            </h3>
           </div>
         ))}
       </div>
