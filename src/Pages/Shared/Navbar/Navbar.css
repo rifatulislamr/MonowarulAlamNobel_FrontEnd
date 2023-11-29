@@ -1,7 +1,3 @@
-.main-nav-link:hover{
-    background-color: none !important;
-}
-
-.main-nav-item:hover{
-    background-color: none !important;
+.main-nav-link:hover {
+  color: rgba(40, 40, 40) !important;
 }

@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner/Banner";
+import MyVideos from "../../components/MyVideos/MyVideos";
 import PersonalNews from "../../components/PersonalNews/PersonalNews";
 import PoliticalNews from "../../components/PoliticalNews/PoliticalNews";
 import RecentNews from "../../components/RecentNews/RecentNews";
@@ -13,6 +14,7 @@ const Home = () => {
       <PersonalNews></PersonalNews>
       <SocialNews></SocialNews>
       <PoliticalNews></PoliticalNews>
+      <MyVideos></MyVideos>
     </div>
   );
 };

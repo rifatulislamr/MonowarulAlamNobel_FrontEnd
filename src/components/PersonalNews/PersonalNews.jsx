@@ -1,8 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
@@ -34,8 +34,8 @@ const PersonalNews = () => {
 
   return (
     <div
-    data-aos="fade-up"
-    data-aos-duration="2000"
+      data-aos="fade-up"
+      data-aos-duration="2000"
       className="container mx-auto py-8 md:py-16"
     >
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">
@@ -101,11 +101,16 @@ const PersonalNews = () => {
           {/* Fourth column with news content */}
           <div className=" bg-white p-4 rounded border border-gray-300 shadow">
             {/* <h2 className="text-xl font-bold text-center border-b-2 border-black">সম্প্রতি বার্তা</h2> */}
-            {articlesData?.map((item, i) => (
+            {articlesData?.slice(7, 14)?.map((item, i) => (
               <div key={i}>
-                <h4 className=" border border-gray-300 shadow p-4 mt-5">
-                  {item?.title}
-                </h4>
+                <Link
+                  to={`/all-articles/${item?._id}`}
+                  className="cursor-pointer"
+                >
+                  <h4 className=" border border-gray-300 shadow p-4 mt-5">
+                    {item?.title}
+                  </h4>
+                </Link>
               </div>
             ))}
           </div>

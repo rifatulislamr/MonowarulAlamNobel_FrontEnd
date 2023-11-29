@@ -1,17 +1,16 @@
 import axios from "axios";
 import { useState } from "react";
 // import './RecentNews.css'
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 // ..
 AOS.init();
 
 const RecentNews = () => {
   const [recentNewsData, setRecentNewsData] = useState([]);
   const [recentArticles, setRecentArticles] = useState([]);
-  console.log(recentNewsData[0]?._id);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -98,7 +97,7 @@ const RecentNews = () => {
           {/* Fourth column with news content */}
           <div className=" bg-white p-4 rounded border border-gray-300 shadow">
             {/* <h2 className="text-xl font-bold text-center border-b-2 border-black">সম্প্রতি বার্তা</h2> */}
-            {recentArticles?.slice(0, 7).map((item, i) => (
+            {recentArticles?.slice(0, 7)?.map((item, i) => (
               <div key={i}>
                 <Link to={`/all-articles/${item?._id}`}>
                   <h4 className=" border border-gray-300 shadow p-4 mt-5">

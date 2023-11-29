@@ -2,6 +2,7 @@ import axios from "axios";
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import TabBar from "../TabBar/TabBar";
 
 const PersonalPostDetails = () => {
   const [post, setPost] = useState({});
@@ -41,43 +42,7 @@ const PersonalPostDetails = () => {
           </div>
 
           {/* Tab-bar */}
-          <div className="flex items-start justify-end">
-            <div role="tablist" className="tabs tabs-bordered">
-              <input
-                type="radio"
-                name="my_tabs_1"
-                role="tab"
-                className="tab text-slate-600 text-lg font-semibold"
-                aria-label="সম্প্রতিক"
-              />
-              <div role="tabpanel" className="tab-content my-6">
-                সম্প্রতিক
-              </div>
-
-              <input
-                type="radio"
-                name="my_tabs_1"
-                role="tab"
-                className="tab text-slate-600 text-lg font-semibold "
-                aria-label="ব্যক্তিগত"
-                checked
-              />
-              <div role="tabpanel" className="tab-content my-6">
-                ব্যক্তিগত
-              </div>
-              <input
-                type="radio"
-                name="my_tabs_1"
-                role="tab"
-                className="tab text-slate-600 text-lg font-semibold"
-                aria-label="সামাজিক"
-                checked
-              />
-              <div role="tabpanel" className="tab-content my-6">
-                সামাজিক
-              </div>
-            </div>
-          </div>
+          <TabBar></TabBar>
         </div>
       </div>
     </>
