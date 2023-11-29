@@ -26,6 +26,9 @@ const Navbar = () => {
       <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
         <a>যোগাযোগ</a>
       </li>
+      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+        <Link to='dashboard'>dashboard</Link>
+      </li>
       <li>
         <a href="https://www.facebook.com/monowarul.a.nobel/" target="_blank ">
           <svg
