@@ -72,7 +72,7 @@ const PoliticalNewsSection = () => {
         <label className="label">
           <span className="label-text text-black font-bold">Content Subtitle</span>
         </label>
-        <input
+        <textarea
           type="text"
           name="subtitle"
           value={formData.subtitle}
@@ -80,7 +80,7 @@ const PoliticalNewsSection = () => {
           placeholder="Type here"
           className="input input-bordered w-full bg-slate-800 text-white"
           required
-        />
+        ></textarea>
   
         <label className="label">
           <span className="label-text text-black font-bold">Image Url</span>

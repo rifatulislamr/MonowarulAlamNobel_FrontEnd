@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import YouTube from "react-youtube";
 
 const MyVideos = () => {
@@ -67,8 +67,8 @@ const MyVideos = () => {
   return (
     <div className="container my-8 sm:my-16 mx-auto">
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">ভিডিও</h2>
-      <div className="px-6 grid grid-cols-4 gap-8">
-        {videosData.map((item, i) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6">
+        {videosData?.slice(0,4)?.map((item, i) => (
           <div className="aspect-video" key={i}>
             <YouTube
               videoId={extractVideoId(item.link)}
@@ -78,7 +78,7 @@ const MyVideos = () => {
               onProgress={onProgress}
             />
             <h3 className="mt-2 text-slate-600 text-xl font-medium">
-              {item.name}
+              {item.title}
             </h3>
           </div>
         ))}
