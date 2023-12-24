@@ -34,7 +34,7 @@ const PersonalNews = () => {
 
   return (
     <div
-      data-aos="fade-up"
+    data-aos="zoom-in"
       data-aos-duration="2000"
       className="container mx-auto py-8 md:py-16"
     >
@@ -50,7 +50,7 @@ const PersonalNews = () => {
                 <img
                   src={personalNewsData[0]?.image}
                   alt=""
-                  className="mb-6 md:w-1/2 object-cover object-top"
+                  className="mb-6 md:w-1/2 object-cover object-top hover:brightness-75 transition"
                 />
                 <div className="md:w-1/2">
                   <h3 className="text-2xl sm:text-3xl mb-4">
@@ -70,7 +70,7 @@ const PersonalNews = () => {
             <Link to={`/personal-news/${personalNewsData[1]?._id}`}>
               <img
                 src={personalNewsData[1]?.image}
-                className="mb-6 aspect-square"
+                className="mb-6 aspect-square hover:brightness-75 transition"
                 alt=""
               />
               <h3 className="text-lg mb-4">{personalNewsData[1]?.title}</h3>
@@ -85,7 +85,7 @@ const PersonalNews = () => {
             <Link to={`/personal-news/${personalNewsData[2]?._id}`}>
               <img
                 src={personalNewsData[2]?.image}
-                className="mb-6 aspect-video  object-cover object-center"
+                className="mb-6 aspect-video  object-cover object-center hover:brightness-75 transition"
                 alt=""
               />
               <h3 className="text-lg mb-4">{personalNewsData[2]?.title}</h3>

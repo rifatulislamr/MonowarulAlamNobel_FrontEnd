@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 const TabBar = () => {
   // active state for tab
@@ -50,7 +52,9 @@ const TabBar = () => {
   }, []);
 
   return (
-    <div className="flex items-start justify-end">
+    <div
+    
+    className="flex items-start justify-end">
       <div role="tablist" className="tabs tabs-bordered">
         {/* recent */}
         <input

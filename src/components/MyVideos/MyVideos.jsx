@@ -1,6 +1,11 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
 import YouTube from "react-youtube";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+ 
 
 const MyVideos = () => {
   const [player, setPlayer] = useState(null);
@@ -65,7 +70,10 @@ const MyVideos = () => {
   };
 
   return (
-    <div className="container my-8 sm:my-16 mx-auto">
+    <div
+    data-aos="zoom-in"
+    data-aos-duration="2000" 
+    className="container my-8 sm:my-16 mx-auto">
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">ভিডিও</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6">
         {videosData?.slice(0,4)?.map((item, i) => (

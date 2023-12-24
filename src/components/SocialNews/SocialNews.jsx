@@ -34,8 +34,8 @@ const SocialNews = () => {
 
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
+    data-aos="fade-up"
+    data-aos-duration="3000"
       className="container mx-auto py-8 md:py-16"
     >
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">
@@ -67,11 +67,11 @@ const SocialNews = () => {
           {/* first item */}
           <div className="lg:col-span-full">
             <Link to={`/social-news/${socialNewsData[0]?._id}`}>
-              <div className=" md:flex md:justify-between md:gap-6 ">
+              <div className=" md:flex md:justify-between md:gap-6">
                 <img
                   src={socialNewsData[0]?.image}
                   alt=""
-                  className="mb-6 md:w-1/2 object-cover object-top"
+                  className="mb-6 md:w-1/2 object-cover object-top hover:brightness-75 transition"
                 />
                 <div className="md:w-1/2">
                   <h3 className="text-2xl sm:text-3xl mb-4">
@@ -91,7 +91,7 @@ const SocialNews = () => {
             <Link to={`/social-news/${socialNewsData[1]?._id}`}>
               <img
                 src={socialNewsData[1]?.image}
-                className="mb-6 aspect-square"
+                className="mb-6 aspect-square hover:brightness-75 transition"
                 alt=""
               />
               <h3 className="text-lg mb-4">{socialNewsData[1]?.title}</h3>
@@ -106,7 +106,7 @@ const SocialNews = () => {
             <Link to={`/social-news/${socialNewsData[2]?._id}`}>
               <img
                 src={socialNewsData[2]?.image}
-                className="mb-6 aspect-video  object-cover object-center"
+                className="mb-6 aspect-video  object-cover object-center hover:brightness-75 transition"
                 alt=""
               />
               <h3 className="text-lg mb-4">{socialNewsData[2]?.title}</h3>

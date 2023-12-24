@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 // import './RecentNews.css'
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 // ..
 AOS.init();
 
@@ -36,8 +37,8 @@ const PoliticalNews = () => {
 
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
+    data-aos="zoom-in-right"
+      data-aos-duration="3000"
       className="container mx-auto py-8 md:py-16"
     >
       <h2 className="text-4xl ml-5 pb-4 border-b-2 border-black mb-8">
