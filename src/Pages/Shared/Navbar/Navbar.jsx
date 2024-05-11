@@ -11,34 +11,36 @@ const Navbar = () => {
 
   const navOption = (
     <>
-      <li className="main-nav-item group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      <li className="main-nav-item group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="/" className="main-nav-link">
           হোম
         </Link>
       </li>
-      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="/personal-activities" className="main-nav-link">
           ব্যক্তিগত কর্মকান্ড
         </Link>
       </li>
-      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="/social-activities" className="main-nav-link">
           সামাজিক কর্মকান্ড
         </Link>
       </li>
-      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="/political-activities" className="main-nav-link">
           রাজনৈতিক কর্মকান্ড
         </Link>
       </li>
-      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="/recent-activities" className="main-nav-link">
           সম্প্রতিক কর্মকান্ড
         </Link>
       </li>
-      <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-200 hover:before:scale-x-100">
+      {/* dashboard link */}
+
+      {/* <li className="group relative cursor-pointer font-montserrat text-sm text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-slate-600 before:transition before:duration-500 hover:before:scale-x-100">
         <Link to="dashboard">dashboard</Link>
-      </li>
+      </li> */}
       <li>
         <a href="https://www.facebook.com/monowarul.a.nobel/" target="_blank ">
           <svg

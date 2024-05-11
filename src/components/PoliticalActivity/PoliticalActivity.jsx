@@ -1,6 +1,8 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+
 
 const PoliticalActivity = () => {
   const [politicalNewsData, setPoliticalNewsData] = useState([]);
@@ -28,8 +30,10 @@ const PoliticalActivity = () => {
       className="container mx-auto p-8 sm:p-16 min-h-[80vh]"
     >
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {politicalNewsData.map((item, i) => (
-          <Link
+   
+
+        {politicalNewsData.map((item,i) => (
+          <Link key={i}
             to={`/political-news/${item?._id}`}
             className="border border-gray-200 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition duration-300 hover:scale-105 w-full rounded-md"
           >
